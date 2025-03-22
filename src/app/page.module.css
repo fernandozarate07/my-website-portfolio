@@ -1,0 +1,15 @@
+/* src/app/page.module.css */
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #666;
+}
