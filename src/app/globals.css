@@ -58,3 +58,13 @@ nav {
 .link:hover {
   color: var(--black-color);
 }
+.footer {
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: var(--size-s);
+  font-weight: 100;
+}

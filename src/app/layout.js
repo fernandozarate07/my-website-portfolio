@@ -8,7 +8,7 @@ export const metadata = {
 };
 const geist = Geist({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
 export default function RootLayout({ children }) {
@@ -32,6 +32,11 @@ export default function RootLayout({ children }) {
           </div>
         </nav>
         {children}
+        <footer>
+          <div className="footer">
+            <p>© Fernando Zárate 2025 ~ Casi todos los derechos reservados</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
