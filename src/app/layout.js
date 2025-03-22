@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./globals.css";
 import { Geist } from "next/font/google";
+import Image from "next/image";
 
 export const metadata = {
   title: "Mi Portfolio",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
             <Link className="link" href="/contact">
               Contacto
             </Link>
+            <Image src="/logo.svg" alt="imagen del logo" width={20} height={20} />
           </div>
         </nav>
         {children}
