@@ -21,14 +21,11 @@ export default function RootLayout({ children }) {
             <Link className="link" href="/">
               Inicio
             </Link>
-            <Link className="link" href="/about">
-              Sobre Mí
-            </Link>
             <Link className="link" href="/project">
               Proyectos
             </Link>
-            <Link className="link" href="/contact">
-              Contacto
+            <Link className="link" href="/about">
+              Sobre Mí
             </Link>
             <Image src="/logo.svg" alt="imagen del logo" width={20} height={20} />
           </div>

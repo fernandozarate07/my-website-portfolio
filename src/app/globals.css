@@ -3,8 +3,8 @@
   --white: rgba(255, 255, 255, 1);
   --black: rgba(0, 0, 0, 1);
   --black-75: rgba(0, 0, 0, 0.75);
-  --white-75: rgba(255, 255, 255, 0.75);
-  --gray-50: rgba(128, 128, 128, 1);
+  --black-25: rgba(0, 0, 0, 0.25);
+  --black-50: rgba(0, 0, 0, 0.5);
 
   /* font size */
 
@@ -23,7 +23,7 @@ body {
   grid-template-rows: auto 1fr auto;
 
   color: var(--black);
-  background-color: var(--white-75);
+  background-color: var(--white);
   font-size: var(--size-s);
 }
 * {
@@ -52,7 +52,10 @@ nav {
   border-radius: 40px;
   font-weight: 400;
   letter-spacing: 0.25px;
-  background-color: var(--gray-50);
+  background-color: var(--black-50);
+  box-shadow: rgba(0, 0, 0, 0.4) 0 -20px 15px -12px inset, rgba(0, 0, 0, 0.3) 0 2px 4px, rgba(0, 0, 0, 0.25) 0 4px 8px,
+    rgba(0, 0, 0, 0.2) 0 8px 16px, rgba(0, 0, 0, 0.1) 0 16px 32px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 .link {
   color: var(--white);
