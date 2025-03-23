@@ -29,7 +29,7 @@
   align-items: center;
   gap: 20px;
 }
-.about__resume {
+.about__logo {
   transition: transform 0.3s;
 }
 .about__resume:hover {

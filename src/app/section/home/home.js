@@ -12,8 +12,8 @@ export default function Home() {
           src="/image/avatar.svg"
           alt="imagen de avatar de perfil"
           className={styles.home__avatar}
-          width={200}
-          height={200}
+          width={150}
+          height={150}
         />
         <Primary_btn
           type="link"
@@ -21,33 +21,35 @@ export default function Home() {
           content="Disponible para trabjar"
         />
       </div>
-      <div className={styles.home__content}>
+      <div className={styles.home__content_container}>
         <h1 className={styles.home__title}>Hola, Soy Fernando.</h1>
         <h2 className={styles.home__subtitle}>
           Desarrollador Web <span style={{ color: "var(--secondary)" }}>Fullstack</span>
           <i className="fa-solid fa-hand-peace"></i>
         </h2>
         <div className={styles.home__btn_container}>
-          <p className={styles.home__para}>¿Qué te trae por aquí?</p>
-          <Secondary_btn
-            type="navlink"
-            section="about"
-            content={
-              <>
-                Descargar cv
-                <FaFilePdf />
-              </>
-            }
-          />
-          <Secondary_btn
-            type="link"
-            link="mailto:fernandozarate.dev@gmail.com?subject=Hola Fer!"
-            content={
-              <>
-                Contáctame <FaAt />
-              </>
-            }
-          />
+          <p className={styles.home__p}>¿Qué te trae por aquí?</p>
+          <div className={styles.home__btns}>
+            <Secondary_btn
+              type="navlink"
+              section="about"
+              content={
+                <>
+                  Descargar cv
+                  <FaFilePdf />
+                </>
+              }
+            />
+            <Secondary_btn
+              type="link"
+              link="mailto:fernandozarate.dev@gmail.com?subject=Hola Fer!"
+              content={
+                <>
+                  Contáctame <FaAt />
+                </>
+              }
+            />
+          </div>
         </div>
       </div>
     </section>

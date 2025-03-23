@@ -13,7 +13,7 @@ export default function About() {
       <Image
         src="/image/logo.svg"
         alt="imagen de avatar de perfil"
-        className={styles.about__resume}
+        className={styles.about__logo}
         width={200}
         height={200}
       />

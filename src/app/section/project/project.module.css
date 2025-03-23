@@ -1,7 +1,5 @@
 .project {
   width: 100%;
-  padding-bottom: 60px;
-
   display: flex;
   flex-direction: column;
   gap: 60px;
