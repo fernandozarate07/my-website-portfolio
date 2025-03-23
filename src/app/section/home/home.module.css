@@ -1,0 +1,47 @@
+/* home   -----------------------------------------------*/
+.home {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.home__logo_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.home__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.home__avatar {
+  transition: transform 0.3s;
+}
+.home__avatar:hover {
+  transform: scale(1.1);
+}
+.home__title {
+  font-size: var(--size-xxl);
+}
+.home__subtitle {
+  font-size: var(--size-m);
+}
+.home__content i {
+  color: var(--primary-color);
+}
+.home_section__para {
+  font-size: var(--size-m);
+}
+.home__btn_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

@@ -1,0 +1,37 @@
+.about {
+  width: 100%;
+  padding-bottom: 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+
+  text-align: justify;
+}
+.about__title {
+  width: 100%;
+  padding-bottom: 10px;
+  font-size: var(--size-l);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid var(--black);
+}
+.about__container_content {
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.about__resume {
+  transition: transform 0.3s;
+}
+.about__resume:hover {
+  transform: scale(1.1);
+}

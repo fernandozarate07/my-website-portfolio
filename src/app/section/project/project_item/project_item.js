@@ -1,6 +1,6 @@
-import styles from "./project.module.css";
+import styles from "./project_item.module.css";
 import Image from "next/image";
-import Seconday_btn from "../button/secondary_btn";
+import Seconday_btn from "../../../button/secondary_btn";
 import { FaGithub, FaPaperPlane, FaCheck, FaArrowRight } from "react-icons/fa";
 
 export default function Project({ project }) {

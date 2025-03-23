@@ -31,7 +31,6 @@ body {
   color: var(--black);
   background-color: var(--white);
   font-size: var(--size-s);
-  text-align: justify;
 }
 nav {
   position: sticky;
