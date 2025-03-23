@@ -19,7 +19,7 @@ const projects = [
     ],
     technology: ["Frontend: Next.js", "Backend: Node y Express", "Database: MySQL y Prisma"],
     linkApp: "https://tuner-app-mu.vercel.app/",
-    linkCode: "https://github.com/fernandozarate07/tuner-app",
+    linkCode: "https://github.com/fernandozarate07/summaries-app-back",
   },
   {
     id: 2,
