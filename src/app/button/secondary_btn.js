@@ -2,7 +2,7 @@
 import Link from "next/link";
 import styles from "./btn_style.module.css";
 
-export default function Primary_btn({ type, content, section, link }) {
+export default function Seconday_btn({ type, content, section, link }) {
   const handle_click = (e) => {
     if (type === "link" && link && link.includes("mailto:")) {
       e.preventDefault();
@@ -26,8 +26,8 @@ export default function Primary_btn({ type, content, section, link }) {
 
   if (type === "navlink") {
     return (
-      <Link href={`/${section}`} className={styles.button_one}>
-        <span className={styles.button_one_content}>{content}</span>
+      <Link href={`/#${section}`} className={styles.button_two}>
+        <span className={styles.button_two_content}>{content}</span>
       </Link>
     );
   }
@@ -36,19 +36,19 @@ export default function Primary_btn({ type, content, section, link }) {
     return (
       <Link
         href={link || "#"}
-        className={styles.button_one}
+        className={styles.button_two}
         target="_blank"
         rel="noopener noreferrer"
         onClick={handle_click}>
-        <span className={styles.button_one_content}>{content}</span>
+        <span className={styles.button_two_content}>{content}</span>
       </Link>
     );
   }
 
   if (type === "button") {
     return (
-      <button className={styles.button_one} onClick={handle_download_pdf}>
-        <span className={styles.button_one_content}>{content}</span>
+      <button className={styles.button_two} onClick={handle_download_pdf}>
+        <span className={styles.button_two_content}>{content}</span>
       </button>
     );
   }

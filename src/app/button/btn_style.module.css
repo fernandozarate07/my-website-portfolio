@@ -1,0 +1,92 @@
+/* btn one */
+.button_one {
+  position: relative;
+
+  height: 40px;
+  width: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 40px;
+  text-decoration: none;
+  letter-spacing: 0.25px;
+  border: transparent;
+  cursor: pointer;
+  overflow: hidden;
+
+  color: var(--secondary);
+  white-space: nowrap;
+  background-color: var(--white);
+}
+.button_one::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: -350%;
+  left: -350%;
+
+  width: 800%;
+  height: 800%;
+
+  background: conic-gradient(from 0deg, #003459, #007ea7, #00a8e8, #e5e5e5, #00a8e8, #007ea7, #003459);
+  animation: rotateColors 4s linear infinite;
+}
+.button_one_content {
+  position: relative;
+  z-index: 1;
+
+  padding: 10px 20px;
+
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 4px solid transparent;
+  background-color: var(--white);
+  border-radius: 40px;
+}
+
+/* Animación de rotación para el fondo */
+@keyframes rotateColors {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* btn two */
+.button_two {
+  padding: 10px 20px;
+  height: 40px;
+  width: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 40px;
+  text-decoration: none;
+  letter-spacing: 0.25px;
+  border: transparent;
+  cursor: pointer;
+  overflow: hidden;
+
+  color: var(--primary);
+  background-color: var(--gray);
+  transition: transform 0.3s ease;
+}
+.button_two:hover {
+  transform: scale(1.05);
+}
+.button_two_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

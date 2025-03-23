@@ -18,16 +18,18 @@ export default function RootLayout({ children }) {
       <body>
         <nav>
           <div className="nav_bar">
-            <Link className="link" href="/">
+            <Link href="#home" className="link">
               Inicio
             </Link>
-            <Link className="link" href="/project">
+            <Link href="#project" className="link">
               Proyectos
             </Link>
-            <Link className="link" href="/about">
+            <Link href="#about" className="link">
               Sobre Mí
             </Link>
-            <Image src="/logo.svg" alt="imagen del logo" width={20} height={20} />
+            <div className="logo_container">
+              <Image src="/image/logo.svg" alt="imagen del logo" className="logo" width={20} height={20} />
+            </div>
           </div>
         </nav>
         {children}
