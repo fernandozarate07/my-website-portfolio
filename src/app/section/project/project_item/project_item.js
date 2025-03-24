@@ -21,7 +21,9 @@ export default function Project({ project }) {
           <FaArrowRight /> <p className={styles.project__technology_p}>{project.technology}</p>
         </div>
         <div className={styles.progress_bar_container}>
-          <div className={styles.progress_bar} style={{ width: `${project.percentage}` }}>
+          <div
+            className={project.status === "EN PROCESO" ? styles.progress_bar_inprocess : styles.progress_bar_finished}
+            style={{ width: `${project.percentage}` }}>
             {project.status} : {project.percentage}
           </div>
         </div>
