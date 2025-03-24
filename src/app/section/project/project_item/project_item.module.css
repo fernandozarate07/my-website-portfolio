@@ -32,7 +32,7 @@
   gap: 10px;
   color: var(--primary);
 }
-.project__technology_span {
+.project__technology_p {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -18,15 +18,7 @@ export default function Project({ project }) {
           ))}
         </div>
         <div className={styles.project__technology}>
-          {project.technology.map((tech, index) => (
-            <p className={styles.project__technology_span} key={index}>
-              {
-                <>
-                  <FaArrowRight /> {tech}
-                </>
-              }
-            </p>
-          ))}
+          <FaArrowRight /> <p className={styles.project__technology_p}>{project.technology}</p>
         </div>
         <div className={styles.progress_bar_container}>
           <div className={styles.progress_bar} style={{ width: `${project.percentage}` }}>
