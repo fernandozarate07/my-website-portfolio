@@ -1,4 +1,6 @@
 .project {
+  width: 100%;
+
   display: grid;
   grid-template-columns: 1fr auto;
   justify-content: center;
@@ -8,6 +10,7 @@
 .project__container_content {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
 }
 .project__title {
@@ -69,6 +72,7 @@
 }
 @media (max-width: 1024px) {
   .project {
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     gap: 40px;
