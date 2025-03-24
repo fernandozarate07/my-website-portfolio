@@ -27,7 +27,7 @@ const projects = [
     title: "Protoprogramadores",
     status: "FINALIZADO",
     percentage: "100%",
-    description: "Protoprogramadores es una app para una agencia de desarrollo web que brinda soluciones digitales.",
+    description: "Protoprogramadores es la web de una agencia de desarrollo web que brinda soluciones digitales.",
     characteristics: ["Renderizado hibrido (CSR y SSG) con Next.js", "Integración con redes sociales.", "Diseño de UI"],
     technology: "Next",
     linkApp: "https://simple-weather-omega.vercel.app/",
