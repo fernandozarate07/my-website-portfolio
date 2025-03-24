@@ -61,6 +61,10 @@ nav {
   backdrop-filter: blur(10px);
 }
 .link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
   color: var(--black);
   cursor: pointer;
   font-size: var(--size-s);
@@ -85,5 +89,19 @@ nav {
   justify-content: center;
   align-items: center;
 
+  text-align: center;
+
   font-size: var(--size-s);
+}
+@media (max-width: 768px) {
+  .icon {
+    display: block;
+    font-size: var(--size-l);
+  }
+  .link_name {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
 }

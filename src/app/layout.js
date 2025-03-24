@@ -2,9 +2,10 @@ import Link from "next/link";
 import "./globals.css";
 import { Geist } from "next/font/google";
 import Image from "next/image";
+import { FaHome, FaCode, FaSlackHash } from "react-icons/fa";
 
 export const metadata = {
-  title: "Mi Portfolio",
+  title: "Fernando Zárate portfolio",
   description: "Bienvenido a mi portfolio",
 };
 const geist = Geist({
@@ -19,23 +20,23 @@ export default function RootLayout({ children }) {
         <nav>
           <div className="nav_bar">
             <Link href="#home" className="link">
-              Inicio
+              <FaHome className="icon" />
+              <span className="link_name">Inicio</span>
             </Link>
             <Link href="#project" className="link">
-              Proyectos
+              <FaCode className="icon" />
+              <span className="link_name">Proyectos</span>
             </Link>
             <Link href="#about" className="link">
-              Sobre Mí
+              <FaSlackHash className="icon" />
+              <span className="link_name">Sobre Mí</span>
             </Link>
-            <div className="logo_container">
-              <Image src="/image/logo.svg" alt="imagen del logo" className="logo" width={20} height={20} />
-            </div>
           </div>
         </nav>
         {children}
         <footer>
           <div className="footer">
-            <p>© Fernando Zárate 2025 ~ Casi todos los derechos reservados</p>
+            <p>© 2025. Casi todos los derechos reservados</p>
           </div>
         </footer>
       </body>
