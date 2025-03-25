@@ -8,7 +8,7 @@ export default function Project() {
     <section id="project" className={styles.project}>
       <h2 className={styles.project__title}>
         <FaCode />
-        Proyectos
+        <span>Proyectos</span>
       </h2>
       {database.map((project) => (
         <Project_item key={project.id} project={project} />

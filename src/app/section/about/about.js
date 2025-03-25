@@ -8,7 +8,7 @@ export default function About() {
     <section id="about" className={styles.about}>
       <h2 className={styles.about__title}>
         <FaSlackHash />
-        Sobre Mí
+        <span> Sobre Mí</span>
       </h2>
       <Image
         src="/image/logo.svg"
