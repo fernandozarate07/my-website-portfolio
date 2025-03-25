@@ -30,24 +30,12 @@ export default function Home() {
         <div className={styles.home__btn_container}>
           <p className={styles.home__p}>¿Qué te trae por aquí?</p>
           <div className={styles.home__btns}>
-            <Secondary_btn
-              type="navlink"
-              section="about"
-              content={
-                <>
-                  Descargar cv
-                  <FaFilePdf />
-                </>
-              }
-            />
+            <Secondary_btn type="navlink" section="about" content={"Descargar cv"} icon={"pdf"} />
             <Secondary_btn
               type="link"
               link="mailto:fernandozarate.dev@gmail.com?subject=Hola Fer!"
-              content={
-                <>
-                  Contáctame <FaAt />
-                </>
-              }
+              content={"Contáctame"}
+              icon={"email"}
             />
           </div>
         </div>

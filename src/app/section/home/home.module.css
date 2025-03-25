@@ -45,7 +45,8 @@
 }
 .home__btns {
   display: flex;
-  gap: 20px;
+  flex-direction: row;
+  gap: 10px;
 }
 @media (max-width: 1024px) {
   .home__logo_container {
@@ -66,5 +67,8 @@
 @media (max-width: 768px) {
   .home__btn_container {
     flex-direction: column;
+  }
+  .home__btns {
+    gap: 5px;
   }
 }

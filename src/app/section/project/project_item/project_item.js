@@ -1,7 +1,7 @@
 import styles from "./project_item.module.css";
 import Image from "next/image";
 import Seconday_btn from "../../../button/secondary_btn";
-import { FaGithub, FaPaperPlane, FaCheck, FaArrowRight } from "react-icons/fa";
+import { FaCheck, FaArrowRight } from "react-icons/fa";
 import { Slide_up } from "../../../motion/slide_up";
 
 export default function Project({ project }) {
@@ -40,24 +40,8 @@ export default function Project({ project }) {
         </Slide_up>
         <Slide_up>
           <div className={styles.project__btn_container}>
-            <Seconday_btn
-              type="link"
-              link={project.linkApp}
-              content={
-                <>
-                  Ver App <FaPaperPlane />
-                </>
-              }
-            />
-            <Seconday_btn
-              type="link"
-              link={project.linkCode}
-              content={
-                <>
-                  Ver Code <FaGithub />
-                </>
-              }
-            />
+            <Seconday_btn type="link" link={project.linkApp} content={"Ver app"} icon={"avion"} />
+            <Seconday_btn type="link" link={project.linkCode} content={"Ver code"} icon={"github"} />
           </div>
         </Slide_up>
       </div>

@@ -61,7 +61,7 @@
   }
 }
 /* btn two */
-.button_two {
+/* .button_two {
   padding: 10px 20px;
   height: 40px;
   width: auto;
@@ -83,10 +83,69 @@
 }
 .button_two:hover {
   transform: scale(1.05);
-}
-.button_two_content {
+} */
+.button_two {
+  position: relative;
+  overflow: hidden;
+
+  height: 40px;
+  width: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
+
+  text-decoration: none;
+  line-height: 1;
+  border-radius: 40px;
+
+  background-color: var(--gray);
+  color: var(--primary);
+  border: none;
+  cursor: pointer;
+}
+
+.button_two_decor {
+  position: absolute;
+  inset: 0;
+  background: var(--primary);
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+  z-index: 0;
+  border-radius: 40px;
+}
+
+.button_content {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+.button_two_icon_container {
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  border-radius: 40px;
+}
+
+.button_text {
+  display: inline-block;
+  transition: color 0.5s;
+  padding: 2px 1.5rem 2px;
+  padding-left: 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.button_two:hover .button_text {
+  color: var(--white);
+}
+
+.button_two:hover .button_two_decor {
+  transform: translate(0);
 }

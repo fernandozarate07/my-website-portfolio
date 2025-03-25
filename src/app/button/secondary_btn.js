@@ -1,8 +1,28 @@
 "use client";
 import Link from "next/link";
 import styles from "./btn_style.module.css";
+import { FaGithub, FaPaperPlane, FaCheck, FaArrowRight, FaAt, FaFilePdf } from "react-icons/fa";
 
-export default function Seconday_btn({ type, content, section, link }) {
+export default function Secondary_btn({ type, content, section, link, icon }) {
+  const getIcon = () => {
+    switch (icon) {
+      case "email":
+        return <FaAt />;
+      case "pdf":
+        return <FaFilePdf />;
+      case "flecha":
+        return <FaArrowRight />;
+      case "check":
+        return <FaCheck />;
+      case "avion":
+        return <FaPaperPlane />;
+      case "github":
+        return <FaGithub />;
+      default:
+        return null;
+    }
+  };
+
   const handle_click = (e) => {
     if (type === "link" && link && link.includes("mailto:")) {
       e.preventDefault();
@@ -24,10 +44,20 @@ export default function Seconday_btn({ type, content, section, link }) {
     document.body.removeChild(link);
   };
 
+  const buttonContent = (
+    <>
+      <span className={styles.button_two_decor}></span>
+      <div className={styles.button_content}>
+        <div className={styles.button_two_icon_container}>{getIcon()}</div>
+        <span className={styles.button_text}>{content}</span>
+      </div>
+    </>
+  );
+
   if (type === "navlink") {
     return (
       <Link href={`/#${section}`} className={styles.button_two}>
-        <span className={styles.button_two_content}>{content}</span>
+        {buttonContent}
       </Link>
     );
   }
@@ -40,7 +70,7 @@ export default function Seconday_btn({ type, content, section, link }) {
         target="_blank"
         rel="noopener noreferrer"
         onClick={handle_click}>
-        <span className={styles.button_two_content}>{content}</span>
+        {buttonContent}
       </Link>
     );
   }
@@ -48,9 +78,10 @@ export default function Seconday_btn({ type, content, section, link }) {
   if (type === "button") {
     return (
       <button className={styles.button_two} onClick={handle_download_pdf}>
-        <span className={styles.button_two_content}>{content}</span>
+        {buttonContent}
       </button>
     );
   }
+
   return null;
 }
