@@ -1,7 +1,9 @@
 import styles from "./project_item.module.css";
 import Image from "next/image";
 import Seconday_btn from "../../../button/secondary_btn";
-import { FaCheck, FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+import { TbPointFilled } from "react-icons/tb";
+
 import { Slide_up } from "../../../motion/slide_up";
 
 export default function Project({ project }) {
@@ -18,8 +20,7 @@ export default function Project({ project }) {
           <div className={styles.project__characteristics}>
             {project.characteristics.map((item, index) => (
               <p key={index}>
-                {" "}
-                <FaCheck style={{ color: "var(--secondary)" }} /> {item}
+                <TbPointFilled /> {item}
               </p>
             ))}
           </div>
@@ -40,20 +41,29 @@ export default function Project({ project }) {
         </Slide_up>
         <Slide_up>
           <div className={styles.project__btn_container}>
-            <Seconday_btn type="link" link={project.linkApp} content={"Ver app"} icon={"avion"} />
-            <Seconday_btn type="link" link={project.linkCode} content={"Ver code"} icon={"github"} />
+            <Seconday_btn type="link" link={project.linkApp} content={"VER APP"} />
+            <Seconday_btn type="link" link={project.linkCode} content={"VER CODE"} />
           </div>
         </Slide_up>
       </div>
       <div className={styles.project__img_container}>
         <Slide_up>
-          <Image
-            src={project.img} // Usa el valor de la prop 'project.img'
-            alt="imagen de proyecto"
-            className={styles.project__img}
-            width={300}
-            height={300}
-          />
+          <div className={styles.my_card}>
+            <div className={styles.inner_card}>
+              <div className={styles.front_side}>
+                <Image
+                  src={project.img} // Usa el valor de la prop 'project.img'
+                  alt="imagen de proyecto"
+                  className={styles.project__img}
+                  width={200}
+                  height={200}
+                />
+              </div>
+              <div className={styles.back_side}>
+                <p className={styles.title}>{project.title}</p>
+              </div>
+            </div>
+          </div>
         </Slide_up>
       </div>
     </div>

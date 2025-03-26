@@ -13,5 +13,5 @@
   gap: 10px;
 
   font-size: var(--size-l);
-  border-bottom: 2px solid var(--black);
+  border-bottom: 20px solid var(--black);
 }
